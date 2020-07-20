@@ -81,8 +81,8 @@ module User
         # I trust that the "provider_uid" value (like, eg, "12351231_key'?)
         # is correct.
         # - There are some validations/checks in the controller about
-        # what kind of data does 'provider_uid' express?
-        # - How many provider_uid there are? 1, 2, 3 ... 1000.
+        # 'provider_uid' data?
+        # - How many "provider_uid" there are? 1, 2, 3 ... 1000.
         # Better handle this differently in any case.
         u.update(provider_uid_key)
         # there was a day "update_attributes" going to be deprecated soon.
