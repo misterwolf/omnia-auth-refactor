@@ -62,7 +62,7 @@ module User
     # It is useless:
     # - in extreme case, if something went wrong, @error var will say you.
     # - we can't ask to a model if we have passed blank params. Model should
-    # warn you ASAP about this ( eg, in the initialize, as already done)
+    # warn you ASAP about this ( eg, in the initialize) or prevent op in case.
     # def missing_omniauth_params?
     #   omniauth_hash.blank? || redirect_path.blank?
     # end
